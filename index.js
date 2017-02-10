@@ -25,6 +25,6 @@ app.all('/translate', function(req, res, next) {
     });
 });
 
-app.listen(config.PORT, config.HOST, function() {
+app.listen(8080, function() {
     console.info('App started on http://' + config.HOST + ':' + config.PORT);
 });
