@@ -25,6 +25,8 @@ app.all('/translate', function(req, res, next) {
     });
 });
 
+app.get('/ping', function(req, res, next) { res.send('ok'); });
+
 app.listen(80, function() {
     console.info('App started on http://' + config.HOST + ':' + config.PORT);
 });
